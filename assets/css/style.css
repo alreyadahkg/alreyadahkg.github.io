@@ -285,7 +285,7 @@ body {
   margin-block: 15px 25px;
 }
 
-.grid-list {
+.grid-list .grid-list1 {
   display: grid;
   gap: 30px;
 }
@@ -974,9 +974,9 @@ body {
     margin-inline: auto;
   }
 
-  .grid-list { grid-template-columns: 1fr 1fr; }
+  .grid-list .grid-list1 { grid-template-columns: 1fr 1fr; }
 
-  :is(.course, .blog) .grid-list { grid-template-columns: 1fr; }
+  :is(.course, .blog) .grid-list .grid-list1 { grid-template-columns: 1fr; }
 
 
 
@@ -1068,7 +1068,7 @@ body {
 
   .btn { padding: 15px 30px; }
 
-  :is(.course, .blog) .grid-list { grid-template-columns: 1fr 1fr; }
+  :is(.course, .blog) .grid-list .grid-list1 { grid-template-columns: 1fr 1fr; }
 
 
 
@@ -1187,7 +1187,10 @@ body {
   .grid-list { grid-template-columns: repeat(4, 1fr); }
 
   :is(.course, .blog) .grid-list { grid-template-columns: repeat(3, 1fr); }
+  
+  .grid-list1 { grid-template-columns: repeat(4, 1fr); }
 
+  :is(.course, .blog) .grid-list1 { grid-template-columns: repeat(4, 1fr); }
 
 
   /**
